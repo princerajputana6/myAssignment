@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,800;1,400;1,500;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Header Section*/
+header{
+
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #423940;
+    padding: 0%;
+}
+header .brand-name{
+    float: left;
+}
+header .brand-name a{
+   text-decoration: none;
+   font-size: 22px;
+   font-weight: 600;
+   color: white;
+   text-transform: uppercase;
+   position: relative;
+}
+header .brand-name a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+header .navbar ul{
+   list-style: none;
+   padding: 0%;
+   margin: 0%;
+}
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    display: block;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;
+}
+header .navbar ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+/*Home Section*/
+.home
+{
+    background-image: linear-gradient(to bottom right, green, yellow);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.btn1 button{
+    position: relative;
+    display: block;
+    margin: 0 20px;
+    border-radius: 25px;
+    color: rgb(251, 255, 5);
+    background-image: linear-gradient(to bottom right, blue, pink);
+    padding: 17px 60px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .btn1 button a{
+      color: black;
+  }
+  button:hover{
+    box-shadow: 0 5px 30px rgba(0,0,0,.2);
+    background-image: linear-gradient(to bottom right, pink, blue);
+  }
+  .btn1 button:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    transition: all .5s ease-in-out;
+  }
+  .btn1 button:after{
+    background: #78c7d2;
+    transform: translate(-98%, -25%) rotate(45deg);
+  }
+
+  .btn1:hover button:after{
+    transform: translate(-9%, -25%) rotate(45deg);
+  }
+  button span{
+    position: relative;
+    z-index: 1;
+  }
+.home-section{
+    background-image: linear-gradient(to bottom right, blue, yellow);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+}
+.label{
+    width: 450px;
+    height: 50px;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-size: large;
+    border-top: 5px solid yellow;
+    border-left: 5px solid yellow;
+    border-right: 5px solid yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+}
+.form{
+    width: 450px;
+    height: 220px;
+    color: white;
+    margin: 5px;
+    font-size: large;
+    border: 5px solid yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.form .file{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, yellow, blue);
+}
+.form .submit{
+    margin: 0px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 60px;
+    background-image: linear-gradient(to bottom right, green, yellow);
+}
+.form .submit:hover{
+    background-image: linear-gradient(to bottom right, yellow, green);
+}
+
+
+
+
