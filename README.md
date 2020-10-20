@@ -5,5 +5,4 @@ what i coded that should be coded into html,css and python(Django ) but due to t
 did it into with the help of php so please cheack it out.
 
 
-Thanks a lot sir for choosing me for this wonderfull task.
-Thanksman
+Keep doing it dear.
